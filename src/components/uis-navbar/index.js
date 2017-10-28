@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import logo from '../../logo.svg';
+import ReactRouter from 'react-router';
+import { Route, Router } from 'react-router';
 import './navbar.css';
+
+var hasHistory = ReactRouter.hasHistory;
 
 class UisNavbar extends Component {
     render() {
@@ -22,8 +26,11 @@ class UisNavbar extends Component {
                         <MenuItem divider />
                         <MenuItem eventKey={3.3}>Separated link</MenuItem>
                     </NavDropdown>
-                    <button className="navbar navbar-inverse"> Login!</button>
                 </Nav>
+                <Router history={hasHistory}>
+                    <Route className="navbar navbar-inverse" path="/register">Register</Route>
+                    <Route className="navbar navbar-inverse" path="/login">Login</Route>
+                </Router>
             </Navbar>
         );
     }
