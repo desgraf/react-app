@@ -22,6 +22,10 @@ i.glyphicon-link {
     border-color: transparent;
     border-radius: 0px;
 }
+.navbar-link {
+    float: right;
+    margin-left: 20px;
+}
 button {
     color: #9d9d9d;
     width: 100px;

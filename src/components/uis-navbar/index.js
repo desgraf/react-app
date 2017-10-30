@@ -1,36 +1,34 @@
 import React, {Component} from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import logo from '../../logo.svg';
-import ReactRouter from 'react-router';
-import { Route, Router } from 'react-router';
+import {Link } from 'react-router-dom';
+
 import './navbar.css';
 
-var hasHistory = ReactRouter.hasHistory;
-
 class UisNavbar extends Component {
+
     render() {
         return (
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#"><img src={logo}/></a>
+                        <a href="/"><img src={logo}/></a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
                     <NavItem eventKey={1} href="#"><i className="glyphicon glyphicon-link"></i>Link</NavItem>
                     <NavItem eventKey={2} href="#"><i className="glyphicon glyphicon-link"></i>Link</NavItem>
-                    <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Action</MenuItem>
-                        <MenuItem eventKey={3.2}>Another action</MenuItem>
-                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                    <NavDropdown eventKey={3} title="Language" id="basic-nav-dropdown">
+                        <MenuItem eventKey={3.1}>Spanish</MenuItem>
+                        <MenuItem eventKey={3.2}>English</MenuItem>
                         <MenuItem divider />
-                        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                        <MenuItem eventKey={3.3}>Chinese</MenuItem>
                     </NavDropdown>
                 </Nav>
-                <Router history={hasHistory}>
-                    <Route className="navbar navbar-inverse" path="/register">Register</Route>
-                    <Route className="navbar navbar-inverse" path="/login">Login</Route>
-                </Router>
+                <div>
+                    <Link className="navbar navbar-inverse navbar-link" to="/login">Login</Link >
+                    <Link className="navbar navbar-inverse navbar-link"to="/register">Register</Link >
+                </div>
             </Navbar>
         );
     }

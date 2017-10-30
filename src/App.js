@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import UisNavbar from './components/uis-navbar';
 import UisFooter from './components/uis-footer';
+import UisRooting from './components/uis-routing';
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -12,16 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React PEPASO</h1>
         </header>
-        <UisNavbar/>
-        <body className="body-style">
-          <h1>Present</h1>
-          <div className="App-paralax"></div>
-          <h1>Future</h1>
-          <div className="App-paralax2"></div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-        </body>
+        <UisRooting/>
         <UisFooter/>
       </div>
     );
