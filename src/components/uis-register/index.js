@@ -7,7 +7,7 @@ class UisRegister extends Component {
             <div>
                 <h1>Registration</h1>
                 <div>
-                    <label for="user">User</label>
+                    <label>User</label>
                     <input type="text" id="user"></input>
                 </div>
             </div>

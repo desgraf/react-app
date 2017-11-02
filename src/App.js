@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import UisFooter from './components/uis-footer';
 import UisRooting from './components/uis-routing';
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
