@@ -6,11 +6,15 @@ a > img {
     margin-top: -13px;
     margin-left: -50px;
 }
+div > Link {
+    height: 20px;
+}
 i.glyphicon-link {
     margin-left: -5px;
 }
 .navbar {
     font-family: Yanone Kaffeesatz, sans-serif;
+    height: 50px;
 }
 .navItem.glyphicon {
     font-family: Yanone Kaffeesatz, sans-serif;
@@ -25,7 +29,17 @@ i.glyphicon-link {
 .navbar-link {
     float: right;
     margin-left: 20px;
+    margin-top: 15px;
 }
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 button {
     color: #9d9d9d;
     width: 100px;

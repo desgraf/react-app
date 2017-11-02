@@ -4,12 +4,13 @@ import logo from '../../logo.svg';
 import {Link } from 'react-router-dom';
 
 import './navbar.css';
+import './fixNavTop.js';
 
 class UisNavbar extends Component {
 
     render() {
         return (
-            <Navbar inverse collapseOnSelect>
+            <Navbar inverse collapseOnSelect data-toggle="affix">
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="/"><img src={logo}/></a>
