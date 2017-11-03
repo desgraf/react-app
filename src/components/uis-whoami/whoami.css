@@ -4,4 +4,27 @@
     border: 2px solid;
     border-color: orange;
 }
-.margins {}
+#root > div > div > div:nth-child(3) > span > h3 {
+    font-family: Yanone Kaffeesatz, sans-serif;
+}
+
+#root > div > div > div:nth-child(3) > span > h5 {
+    font-family: Yanone Kaffeesatz, sans-serif;
+}
+#social-git {
+    margin-left: 5px;
+}
+
+#social-ln {
+    margin-right: 5px;
+}
+
+#social-git:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+#social-ln:hover {
+    color: #0084bf;
+    transform: scale(1.1);
+}

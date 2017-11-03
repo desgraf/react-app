@@ -11,13 +11,17 @@
  
  #social-fb:hover {
      color: #3B5998;
+     transform: scale(1.1);
  }
  #social-tw:hover {
      color: #4099FF;
+     transform: scale(1.1);
  }
  #social-gp:hover {
      color: #d34836;
+     transform: scale(1.1);
  }
  #social-em:hover {
      color: #f39c12;
+     transform: scale(1.1);
  }
