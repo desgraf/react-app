@@ -2,7 +2,7 @@
     width: 80px;
     border-radius: 50%;
     border: 2px solid;
-    border-color: orange;
+    border-color: #61DAFB;
 }
 #root > div > div > div:nth-child(3) > span > h3 {
     font-family: Yanone Kaffeesatz, sans-serif;
@@ -11,6 +11,10 @@
 #root > div > div > div:nth-child(3) > span > h5 {
     font-family: Yanone Kaffeesatz, sans-serif;
 }
+#whoami {
+    margin-bottom: 40px;
+}
+
 #social-git {
     margin-left: 5px;
 }

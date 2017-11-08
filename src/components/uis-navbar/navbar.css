@@ -21,7 +21,9 @@ i.glyphicon-link {
 }
 .navbar {
     font-family: Yanone Kaffeesatz, sans-serif;
-    height: 66px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    height: 500px;
 }
 .navItem.glyphicon {
     font-family: Yanone Kaffeesatz, sans-serif;
@@ -31,10 +33,8 @@ i.glyphicon-link {
 }
 .navbar-inverse {
     border-color: transparent;
+    background-color: transparent;
     border-radius: 0px;
-}
-right-position {
-    float: right;
 }
 
 .affix {

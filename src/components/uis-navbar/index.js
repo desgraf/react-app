@@ -13,18 +13,15 @@ class UisNavbar extends Component {
             <Navbar inverse collapseOnSelect data-toggle="affix">
                 <Navbar.Header>
                     <Navbar.Brand className="navbar-inverse">
-                        <a href="/"><text/> Home</a>
+                        <a href="#app"> Home</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <LinkContainer className="navbar-inverse" to="/link">
-                            <NavItem eventKey={2}>Link</NavItem>
-                        </LinkContainer>
-                        <LinkContainer className="navbar-inverse" to="/who">
-                            <NavItem eventKey={3}>Who Am I ?</NavItem>
-                        </LinkContainer>
+                        <Navbar.Brand className="navbar-inverse">
+                            <a href="#whoami"> Who Am I?</a>
+                        </Navbar.Brand>
                         <NavDropdown className="navbar-inverse" eventKey={3} title="Language" id="basic-nav-dropdown">
                             <LinkContainer to="/logout">
                                 <MenuItem eventKey={3.1}>Spanish</MenuItem>    
@@ -36,10 +33,10 @@ class UisNavbar extends Component {
                                 <MenuItem eventKey={3.3}>Chinese</MenuItem>    
                             </LinkContainer> 
                         </NavDropdown>
-                        <LinkContainer className="navbar-inverse right-position" to="/login">
+                        <LinkContainer className="navbar-inverse" to="/login">
                             <NavItem eventKey={4}>Login</NavItem>
                         </LinkContainer>
-                        <LinkContainer className="navbar-inverse right-position" to="/register">
+                        <LinkContainer className="navbar-inverse" to="/register">
                             <NavItem eventKey={5}>Register</NavItem>
                         </LinkContainer>
                     </Nav>

@@ -5,8 +5,8 @@ import './whoami.css';
 class UisWhoAmI extends Component {
     render() {
         return (
-            <div>
-                <h1>Who I Am ?</h1>
+            <div id="whoami">
+                <h1>Who Am I?</h1>
                 <span>
                     <img className="img-circle" alt="whoami" src={fotoDni}></img>
                     <h3>Sergio Rubio Lafuente</h3>
