@@ -55,6 +55,10 @@ div > div > h1 {
   color: #fff;
   background-color: transparent;
 }
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
 
 #body-part {
   background-image: url('./toyCar.jpg');

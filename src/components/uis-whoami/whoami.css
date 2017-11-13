@@ -17,10 +17,15 @@
 
 #social-git {
     margin-left: 5px;
+    margin-left: 5px;
 }
 
 #social-ln {
     margin-right: 5px;
+}
+
+#social-curriculum {
+    margin-left: 5px;
 }
 
 #social-git:hover {
@@ -30,5 +35,9 @@
 
 #social-ln:hover {
     color: #0084bf;
+    transform: scale(1.1);
+}
+
+#social-curriculum {
     transform: scale(1.1);
 }

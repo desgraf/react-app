@@ -1,0 +1,7 @@
+#app > div.slider > div > div > div > div.slick-slide.slick-active > img {
+    display: block;
+    margin: auto;
+}
+#slider {
+    margin-bottom: 80px;
+}

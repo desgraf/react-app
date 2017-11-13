@@ -22,6 +22,12 @@ class UisNavbar extends Component {
                         <Navbar.Brand className="navbar-inverse">
                             <a href="#whoami"> Who Am I?</a>
                         </Navbar.Brand>
+                        <Navbar.Brand className="navbar-inverse">
+                            <a href="#slider"> Slider</a>
+                        </Navbar.Brand>
+                        <Navbar.Brand>
+                            <a href="#whyhire"> Why Hire Me?</a>
+                        </Navbar.Brand>
                         <NavDropdown className="navbar-inverse" eventKey={3} title="Language" id="basic-nav-dropdown">
                             <LinkContainer to="/logout">
                                 <MenuItem eventKey={3.1}>Spanish</MenuItem>    
